@@ -1,0 +1,9 @@
+<% content_for :title do %>Form Mail<% end %> <h3>Form Mail</h3>
+<div class="form">
+<%= simple_form_for :formmail, url: formmail_path do |form| %> 
+	<%= form.input :name, autofocus: true %>
+	<%= form.input :email %>
+	<%= form.input :content, as: :text %>
+	<%= form.button :submit, 'Submit', class: 'submit' %> 
+<% end %>
+</div>
