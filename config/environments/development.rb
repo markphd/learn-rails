@@ -28,9 +28,9 @@ LearnRails::Application.configure do
   config.assets.debug = true
 
   config.action_mailer.smtp_settings = { 
-  address: "send.one.com",
+  address: "smtp.gmail.com",
   port: 587,
-  domain: ENV["bashfulcoder.com"],
+  domain: ENV["gmail.com"],
   authentication: "plain",
   enable_starttls_auto: true,
   user_name: ENV["GMAIL_USERNAME"],
